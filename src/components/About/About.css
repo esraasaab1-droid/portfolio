@@ -1,0 +1,337 @@
+.about {
+  min-height: auto;
+  padding: 90px 8%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: start;
+  gap: 50px;
+  background: var(--bg-color);
+  position: relative;
+  overflow: hidden;
+}
+
+/* =========================
+   About Image
+========================= */
+
+.about-image-section {
+  text-align: center;
+}
+
+.about-image-section h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 22px;
+  color: var(--primary-hover);
+}
+
+.about-image img {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid var(--primary-color);
+  display: block;
+  margin: 0 auto;
+}
+
+/* =========================
+   About Content
+========================= */
+
+.about-content {
+  max-width: 650px;
+  padding-top: 42px;
+}
+
+.about-content h3 {
+  font-size: 34px;
+  font-weight: 600;
+  margin: 0 0 18px;
+  color: var(--text-color);
+}
+
+.about-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--secondary-text);
+  margin-bottom: 12px;
+}
+
+/* =========================
+   Contact Button
+========================= */
+
+.about-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 12px;
+
+  min-width: 135px;
+  padding: 12px 22px;
+
+  border-radius: 9px;
+
+  background: var(--primary-color);
+  color: white;
+
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.about-button:hover {
+  background: var(--primary-hover);
+  transform: translateY(-3px);
+}
+
+/* =========================
+   Skills
+========================= */
+
+.skills-mini {
+  margin-top: 45px;
+}
+
+.skills-mini h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 28px;
+  color: var(--primary-hover);
+}
+
+.skills-mini h4 span {
+  font-size: 15px;
+  margin-left: 5px;
+  color: var(--primary-hover);
+}
+
+/* =========================
+   Skills Layout
+========================= */
+
+.skills-layout {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 45px;
+  align-items: center;
+}
+
+/* =========================
+   Progress Bars
+========================= */
+
+.technical-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.skill-progress {
+  width: 100%;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 7px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: var(--text-color);
+}
+
+.skill-info span:last-child {
+  color: var(--primary-hover);
+}
+
+/* Background of bar */
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+
+  background: var(--border-color);
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+/* Filled part */
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+
+  background: var(--primary-color);
+
+  border-radius: 20px;
+
+  transition: width 0.8s ease;
+}
+
+/* =========================
+   Problem Solving Circle
+========================= */
+
+.problem-solving {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-circle {
+  width: 145px;
+  height: 145px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    conic-gradient(
+      var(--primary-color) var(--progress),
+      var(--border-color) var(--progress)
+    );
+
+  position: relative;
+}
+
+/* Inner circle */
+
+.progress-circle-inner {
+  width: 112px;
+  height: 112px;
+
+  border-radius: 50%;
+
+  background: var(--card-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-circle-inner strong {
+  font-size: 24px;
+  color: var(--primary-hover);
+}
+
+/* Title */
+
+.problem-title {
+  margin-top: 15px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: var(--text-color);
+
+  text-align: center;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 900px) {
+  .about {
+    grid-template-columns: 1fr;
+    padding: 75px 6%;
+    gap: 40px;
+  }
+
+  .about-image-section {
+    text-align: center;
+  }
+
+  .about-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  .skills-layout {
+    grid-template-columns: 1fr 170px;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 650px) {
+  .about {
+    grid-template-columns: 1fr;
+    padding: 65px 20px;
+    gap: 35px;
+    text-align: center;
+  }
+
+  .about-image-section h2 {
+    font-size: 28px;
+  }
+
+  .about-image img {
+    width: 270px;
+    height: 320px;
+  }
+
+  .about-content {
+    padding-top: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .about-content h3 {
+    font-size: 30px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+  }
+
+  .about-button {
+    margin-top: 12px;
+  }
+
+  .skills-mini {
+    margin-top: 40px;
+  }
+
+  .skills-mini h4 {
+    font-size: 23px;
+  }
+
+  .skills-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .technical-skills {
+    text-align: left;
+  }
+
+  .problem-solving {
+    margin-top: 5px;
+  }
+
+  .progress-circle {
+    width: 140px;
+    height: 140px;
+  }
+
+  .progress-circle-inner {
+    width: 108px;
+    height: 108px;
+  }
+}

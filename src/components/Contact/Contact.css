@@ -1,0 +1,144 @@
+.contact {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 24px 70px;
+    background: var(--bg-color);
+    text-align: center;
+}
+
+.contact-content {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.contact .section-subtitle {
+    margin-bottom: 8px;
+    color: var(--primary-hover);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.contact-content h2 {
+    margin: 0 0 18px;
+    color: var(--text-color);
+    font-size: clamp(38px, 5vw, 50px);
+    font-weight: 600;
+}
+
+.contact-text {
+    max-width: 600px;
+    margin: 0 auto 18px;
+    color: var(--secondary-text);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.contact-cta {
+    margin-bottom: 30px;
+    color: var(--primary-hover);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+/* Contact Form */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 17px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    outline: none;
+    background: var(--card-bg);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--secondary-text);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary-hover);
+    box-shadow: 0 0 0 3px rgba(200, 135, 153, 0.12);
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    align-self: center;
+    padding: 13px 30px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    background: var(--primary-color);
+    color: white;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.form-status {
+    margin: 4px 0 0;
+    color: var(--primary-hover);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+    .contact {
+        padding: 60px 20px 50px;
+    }
+
+    .contact-content h2 {
+        font-size: 36px;
+    }
+
+    .contact-text {
+        font-size: 16px;
+    }
+
+    .contact-cta {
+        font-size: 18px;
+    }
+
+    .contact-form {
+        gap: 13px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 14px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+}

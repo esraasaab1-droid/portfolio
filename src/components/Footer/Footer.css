@@ -1,0 +1,24 @@
+.footer {
+  padding: 25px 8%;
+
+  background: var(--card-color);
+  border-top: 1px solid var(--border-color);
+
+  text-align: center;
+}
+.footer p {
+    margin: 0;
+
+    color: var(--secondary-text);
+    font-size: 14px;
+}
+@media (max-width: 650px) {
+  .footer {
+    padding: 20px 15px;
+  }
+
+  .footer p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}

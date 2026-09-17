@@ -1,0 +1,76 @@
+.app {
+  --bg-color: #f8f4ee;
+  --card-color: #fffdf9;
+  --text-color: #302c2a;
+  --secondary-text: #6f6763;
+  --primary-color: #dfa6b6;
+  --primary-hover: #c88799;
+  --border-color: #e8d8d2;
+
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
+}
+
+.app.dark {
+  --bg-color: #272329;
+  --card-color: #322c31;
+  --text-color: #f7eff2;
+  --secondary-text: #d4c8cd;
+  --primary-color: #dfa6b8;
+  --primary-hover: #efc0cd;
+  --border-color: #51464d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--primary-color);
+  color: var(--text-color);
+}
+
+/* Mouse Line */
+
+.mouse-circle {
+  position: fixed;
+
+  width: 10px;
+  height: 10px;
+
+  background: var(--primary-color);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  z-index: 99999;
+
+  transform: translate(-50%, -50%);
+
+  transition:
+    left 0.12s ease-out,
+    top 0.12s ease-out;
+
+  box-shadow: 0 0 0 5px rgba(223, 166, 182, 0.12);
+}
+
+@media (max-width: 768px) {
+  .mouse-circle {
+    display: none;
+  }
+}
