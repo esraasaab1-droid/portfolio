@@ -12,7 +12,7 @@ function About({ t }) {
         "C++",
         "AI Video Generation",
         "AI Tools & Platforms",
-        "proplem-solving",
+        "problem-solving",
     ];
 
     return (
