@@ -54,7 +54,7 @@ function Hero({ t }) {
           <div className="social-links">
 
             <a
-              href="YOUR_LINKEDIN_LINK"
+              href="https://www.linkedin.com/in/esraa-saab-6519a0388?utm_source=share_via&utm_content=profile&utm_medium=member_android"
               target="_blank"
               rel="noreferrer"
               aria-label="LinkedIn"
