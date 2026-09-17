@@ -1,7 +1,7 @@
 
 import "./Hero.css";
 
-import pdf from "../../assets/images/projects/Esraa_Saab_FlowCV_Resume_2026-09-17 (1).pdf";
+import pdf from "../../assets/images/projects/Esraa_CV.pdf";
 import image from "../../assets/images/image.png";
 
 import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
