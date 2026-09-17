@@ -1,19 +1,19 @@
+
 import "./About.css";
 import image from "../../assets/images/image.png";
 
 function About({ t }) {
     const skills = [
-        { name: "HTML", level: 90 },
-        { name: "CSS", level: 85 },
-        { name: "JavaScript", level: 75 },
-        { name: "React", level: 70 },
-        { name: "Vue.js", level: 70 },
-        { name: "C++", level: 60 },
-        { name: "AI Video Generation", level: 90 },
-        { name: "AI Tools & Platforms", level: 85 },
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Vue.js",
+        "C++",
+        "AI Video Generation",
+        "AI Tools & Platforms",
+        "proplem-solving",
     ];
-
-    const problemSolving = 80;
 
     return (
         <section className="about" id="about">
@@ -41,44 +41,12 @@ function About({ t }) {
                         Skills <span>★</span>
                     </h4>
 
-                    <div className="skills-layout">
-                        {/* Technical Skills */}
-                        <div className="technical-skills">
-                            {skills.map((skill) => (
-                                <div className="skill-progress" key={skill.name}>
-                                    <div className="skill-info">
-                                        <span>{skill.name}</span>
-                                        <span>{skill.level}%</span>
-                                    </div>
-
-                                    <div className="progress-bar">
-                                        <span
-                                            style={{
-                                                width: `${skill.level}%`,
-                                            }}
-                                        ></span>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-
-                        {/* Problem Solving */}
-                        <div className="problem-solving">
-                            <div
-                                className="progress-circle"
-                                style={{
-                                    "--progress": `${problemSolving * 3.6}deg`,
-                                }}
-                            >
-                                <div className="progress-circle-inner">
-                                    <strong>{problemSolving}%</strong>
-                                </div>
-                            </div>
-
-                            <span className="problem-title">
-                                Problem Solving
+                    <div className="skills-list">
+                        {skills.map((skill) => (
+                            <span className="skill-tag" key={skill}>
+                                {skill}
                             </span>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
