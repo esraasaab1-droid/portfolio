@@ -1,32 +1,35 @@
+
 const translations = {
   en: {
-        logo: "Esraa",
+    logo: "Esraa",
 
     nav: {
       home: "Home",
       about: "About",
       skills: "Skills",
       projects: "Projects",
+      educationalContent: "Educational Content",
       contact: "Contact",
     },
 
-   hero: {
-  greeting: "Hello, I'm",
-  role: "Information Engineering Student",
-  description:
-    "Passionate about Frontend Development and building real-world web projects.",
-  projects: "View My Projects",
-  contact: "Contact Me",
-  cv: "Download CV",
-},
+    hero: {
+      greeting: "Hello, I'm",
+      role: "Information Engineering Student",
+      description:
+        "Passionate about Frontend Development and building real-world web projects.",
+      projects: "View My Projects",
+      contact: "Contact Me",
+      cv: "Download CV",
+    },
 
     about: {
       subtitle: "About Me",
       title: "Who I Am",
       text1:
-      "I'm Esraa Mustafa Saab, a third-year Information Engineering student and Frontend Developer passionate about building modern, interactive, and user-friendly web experiences.",
+        "I'm Esraa Mustafa Saab, a third-year Information Engineering student and Frontend Developer passionate about building modern, interactive, and user-friendly web experiences.",
       text2:
-"I've developed strong problem-solving skills and hands-on experience integrating AI tools into my workflow, alongside working with APIs and modern web technologies. I enjoy turning ideas into real, functional projects — you can explore my work on my LinkedIn and GitHub profiles.",    },
+        "I've developed strong problem-solving skills and hands-on experience integrating AI tools into my workflow, alongside working with APIs and modern web technologies. I enjoy turning ideas into real, functional projects — you can explore my work on my LinkedIn and GitHub profiles.",
+    },
 
     skills: {
       subtitle: "My Skills",
@@ -40,6 +43,14 @@ const translations = {
       github: "GitHub",
     },
 
+    educationalContent: {
+      title: "Educational Content",
+      description:
+        "Creating educational posts and Reels about programming, web development, and technology. Sharing knowledge and making technical concepts easier to understand.",
+      button: "Visit My Instagram",
+      username: "@esr.aacodes",
+    },
+
     contact: {
       title: "Let's Connect",
       description:
@@ -51,33 +62,35 @@ const translations = {
   },
 
   ar: {
-            logo: "إسراء",
+    logo: "إسراء",
 
     nav: {
       home: "الرئيسية",
       about: "عني",
       skills: "المهارات",
       projects: "المشاريع",
+      educationalContent: "المحتوى التعليمي",
       contact: "تواصل معي",
     },
 
-   hero: {
-  greeting: "مرحباً، أنا",
-  role: "طالبة هندسة معلوماتية",
-  description:
-    "شغوفة بتطوير الواجهات الأمامية وبناء مشاريع ويب واقعية.",
-  projects: "مشاريعي",
-  contact: "تواصل معي",
-  cv: "تحميل السيرة الذاتية",
-},
+    hero: {
+      greeting: "مرحباً، أنا",
+      role: "طالبة هندسة معلوماتية",
+      description:
+        "شغوفة بتطوير الواجهات الأمامية وبناء مشاريع ويب واقعية.",
+      projects: "مشاريعي",
+      contact: "تواصل معي",
+      cv: "تحميل السيرة الذاتية",
+    },
 
     about: {
       subtitle: "عني",
       title: "من أنا؟",
       text1:
-      "أنا إسراء مصطفى صعب، طالبة سنة ثالثة هندسة معلوماتية ومختصة في تطوير الواجهات الأمامية (Frontend Development). شغوفة ببناء تجارب ويب حديثة وتفاعلية وسهلة الاستخدام.",
+        "أنا إسراء مصطفى صعب، طالبة سنة ثالثة هندسة معلوماتية ومختصة في تطوير الواجهات الأمامية (Frontend Development). شغوفة ببناء تجارب ويب حديثة وتفاعلية وسهلة الاستخدام.",
       text2:
-"طوّرت مهارات قوية في حل المشكلات، ولدي خبرة عملية باستخدام أدوات الذكاء الاصطناعي، إضافة إلى العمل مع الـ APIs وأحدث تقنيات الويب. أستمتع بتحويل الأفكار إلى مشاريع حقيقية وقابلة للتطبيق — يمكنكم الاطلاع على أعمالي عبر حسابيّ على LinkedIn و GitHub.",    },
+        "طوّرت مهارات قوية في حل المشكلات، ولدي خبرة عملية باستخدام أدوات الذكاء الاصطناعي، إضافة إلى العمل مع الـ APIs وأحدث تقنيات الويب. أستمتع بتحويل الأفكار إلى مشاريع حقيقية وقابلة للتطبيق — يمكنكم الاطلاع على أعمالي عبر حسابيّ على LinkedIn و GitHub.",
+    },
 
     skills: {
       subtitle: "مهاراتي",
@@ -89,6 +102,14 @@ const translations = {
       title: "أشياء قمت ببنائها",
       liveDemo: "الموقع",
       github: "GitHub",
+    },
+
+    educationalContent: {
+      title: "المحتوى التعليمي",
+      description:
+        "أصمم وأنشر منشورات تعليمية وفيديوهات Reels عن البرمجة وتطوير الويب والتكنولوجيا، وأسعى إلى تبسيط المفاهيم التقنية ومشاركة المعرفة مع المهتمين بالتقنية.",
+      button: "تابعوني على إنستغرام",
+      username: "@esr.aacodes",
     },
 
     contact: {

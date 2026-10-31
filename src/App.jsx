@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
-
+import EducationalContent from "./components/EducationalContent/EducationalContent";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [language, setLanguage] = useState("en");
@@ -52,6 +52,7 @@ function App() {
       <Hero t={t} />
       <About t={t} />
       <Projects t={t} />
+      <EducationalContent t={t} />
       <Contact t={t} />
       <Footer />
 

@@ -1,0 +1,25 @@
+
+.educational-content {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.educational-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.educational-content p {
+  max-width: 600px;
+  margin: 0 auto 25px;
+  line-height: 1.8;
+}
+
+.educational-content a {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  background: #e1306c;
+  color: white;
+}
